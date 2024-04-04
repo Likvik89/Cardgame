@@ -10,25 +10,25 @@ signal transition_requested(from: Cardstate, to: State)
 var card_ui: CardUI
 
 
-func enter() -> void:
+func enter():
 	pass
 
 
-func exit() -> void:
+func exit():
 	pass
 
 
-func on_input(_event: InputEvent) -> void:
+func on_input(_event: InputEvent):
 	pass
 
 
-func on_gui_input(_event: InputEvent) -> void:
+func on_gui_input(_event: InputEvent):
 	pass
 
 
-func on_mouse_entered() -> void:
+func on_mouse_entered():
 	pass
 
 
-func on_mouse_exited() -> void:
+func on_mouse_exited():
 	pass

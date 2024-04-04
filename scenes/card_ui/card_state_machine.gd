@@ -7,7 +7,7 @@ var current_state: Cardstate
 var states := {}
 
 
-func _init(card: CardUI) -> void:
+func _init(card: CardUI):
 	for child in get_children():
 		if child is Cardstate:
 			states[child.state] = child
@@ -20,11 +20,11 @@ func _init(card: CardUI) -> void:
 		current_state = initial_state
 
 
-func on_input(event: InputEvent) -> void:
+func on_input(event: InputEvent):
 	if current_state:
 		current_state.on_input(event)
 
-func on_gui_input(event: InputEvent) -> void:
+func on_gui_input(event: InputEvent):
 	if current_state:
 		current_state.on_gui_input(event)
 
